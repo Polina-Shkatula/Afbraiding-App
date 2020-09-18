@@ -12,8 +12,6 @@
         android:layout_width="168dp"
         android:layout_height="196dp"
         android:layout_gravity="center"
-        android:scaleType="centerInside"
-        android:layout_marginBottom="45dp"
         android:src="@drawable/ic_logo"/>
 
     <TextView
@@ -22,11 +20,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="120dp"
-        android:layout_marginBottom="20dp"
-        android:text="AfBraids"
+        android:text="@string/braid"
         android:textStyle="bold"
         android:fontFamily="@font/font"
-        android:textColor="#662D91"
+        android:textColor="@color/colorPrimary"
         android:textSize="28sp"/>
 
     <TextView
@@ -35,10 +32,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="30dp"
-        android:text="for braiders"
+        android:text="@string/for_braiders"
         android:textAllCaps="true"
         android:textSize="24sp"
-        android:textColor="#662D91"/>
+        android:textColor="@color/colorPrimary"/>
 
 
 </FrameLayout>
