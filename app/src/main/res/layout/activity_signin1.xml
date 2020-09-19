@@ -81,7 +81,7 @@
         android:layout_marginEnd="50dp"
         android:text="@string/next"
         android:textColor="@color/colorAccent"
-        android:background="@color/colorPrimary"/>
+        android:background="@drawable/shape"/>
 
 
 </LinearLayout>
