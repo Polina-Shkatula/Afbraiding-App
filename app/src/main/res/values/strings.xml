@@ -22,5 +22,13 @@
     <string name="tap">Tap here to add photo</string>
     <string name="congratulation">Congratulations!</string>
     <string name="success">You were successfully registered in AfBraid App as a braider hairstylist!</string>
+    <string name="order">Orders</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="week">This week</string>
+    <string name="clock">9:15 AM</string>
+    <string name="day">Jun 18, 2020</string>
+    <string name="street">75 Park Place 8th floor, New York NY</string>
+    <string name="man">Claudia Smith</string>
 
 </resources>

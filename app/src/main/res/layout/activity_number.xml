@@ -64,7 +64,7 @@
         android:text="@string/lets_go"
         android:textColor="@color/ground"
         android:textAllCaps="false"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:background="@drawable/shape"/>
 
 

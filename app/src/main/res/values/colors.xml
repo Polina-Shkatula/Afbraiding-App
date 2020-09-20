@@ -7,5 +7,6 @@
     <color name="back">#0080EF</color>
     <color name="ground">#FFFFFF</color>
     <color name="error">#FF0000</color>
+    <color name="order">#FFEFFF</color>
 
 </resources>
