@@ -5,9 +5,22 @@
     <string name="code">+421</string>
     <string name="number">Phone Number</string>
     <string name="message">Please enter your mobile number. We will send you a verification message to confirm your account</string>
+    <string name="message2">Please enter the 4 digit verification code that was sent to +421 555 89 39 54.</string>
     <string name="sign_in">Sign In</string>
+    <string name="profile">Add Profile Picture</string>
+    <string name="account">Create Account</string>
     <string name="back">Back</string>
     <string name="tv">By tapping "Next", you agree with our Terms of Service and Privacy Policy</string>
+    <string name="tv2">I did not get SMS with verification code Re-Enter SMS</string>
+    <string name="tv3">Code is uncorrect. Try it again</string>
     <string name="next">Next</string>
+    <string name="save">Save</string>
+    <string name="verify">Verify mobile number</string>
+    <string name="lets_go">Lets Go!</string>
+    <string name="name">My name</string>
+    <string name="email">Email</string>
+    <string name="tap">Tap here to add photo</string>
+    <string name="congratulation">Congratulations!</string>
+    <string name="success">You were successfully registered in AfBraid App as a braider hairstylist!</string>
 
 </resources>
