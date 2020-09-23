@@ -1,4 +1,4 @@
 package com.example.afbraidingapp;
 
-public class Number {
+public class NumberActivity {
 }
