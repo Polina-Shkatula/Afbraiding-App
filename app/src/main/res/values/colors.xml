@@ -2,11 +2,14 @@
 <resources>
     <color name="colorPrimary">#662D91</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="signIn">#000000</color>
-    <color name="message">#000000</color>
+    <color name="colorBlack">#000000</color>
     <color name="back">#0080EF</color>
     <color name="ground">#FFFFFF</color>
-    <color name="error">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorRedReal">#FF0000</color>
     <color name="order">#FFEFFF</color>
+    <color name="BottomNavigation">#FF757575</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorBlackLight80">#CC333333</color>
 
 </resources>

@@ -4,39 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="8dp"
-        android:drawableStart="@drawable/ic_arrow"
-        android:padding="10dp"
-        android:text="@string/back"
-        android:textSize="15sp"
-        android:textColor="@color/back"
-        android:background="@color/ground" />
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_toolbar"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
         android:text="@string/profile"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/signIn"/>
-
+        android:textColor="@color/colorBlackLight80"/>
 
     <ImageView
-        android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:id="@+id/btnAddPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="40dp"
-        android:src="@drawable/wimage"
-        android:background="@drawable/profile_shap"/>
+        android:layout_gravity="center"
+        android:background="@drawable/shape_circle"
+        android:src="@drawable/ic_plus" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,21 +36,23 @@
         android:layout_marginTop="30dp"
         android:text="@string/tap"
         android:textStyle="bold"
-        android:textColor="@color/signIn"
+        android:textColor="@color/colorBlackLight80"
         android:textSize="15dp"/>
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginTop="220dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="34dp"
         android:text="@string/save"
         android:textColor="@color/ground"
         android:textAllCaps="false"
         android:textSize="15dp"
         android:background="@drawable/shape"/>
-
-
 </LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include layout="@layout/layout_toolbar"/>
+
+    <TextView
+        android:id="@+id/tvSendToPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/sign_in"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp" />
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <com.chaos.view.PinView
+            android:id="@+id/codeEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PinWidget.PinView"
+            android:layout_gravity="center_horizontal"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:itemBackground="@color/white"
+            android:padding="0dp"
+            android:textSize="28sp"
+            tools:text="1234"
+            android:textColor="@color/colorBlackLight80"
+            app:cursorColor="@color/colorBlackLight80"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="false"
+            app:itemCount="4"
+            app:itemHeight="42dp"
+            app:itemSpacing="24dp"
+            app:itemWidth="42dp"
+            app:lineColor="@color/colorTransparent"
+            app:lineWidth="0dp"
+            app:viewType="rectangle" />
+        <TextView
+            android:id="@+id/tvIncorrectCode"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/tv3"
+            android:textSize="15sp"
+            android:textColor="@color/colorRedReal" />
+        <TextView
+            android:id="@+id/tvResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/didnt_get_code_sms"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlackLight80" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:background="@color/colorPrimary"
+        android:text="@string/verify_mobile_phone"/>
+</LinearLayout>

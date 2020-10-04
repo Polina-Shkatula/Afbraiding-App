@@ -8,14 +8,14 @@
     <string name="message2">Please enter the 4 digit verification code that was sent to +421 555 89 39 54.</string>
     <string name="sign_in">Sign In</string>
     <string name="profile">Add Profile Picture</string>
-    <string name="account">Create Account</string>
+    <string name="create_account_title">Create Account</string>
     <string name="back">Back</string>
     <string name="tv">By tapping "Next", you agree with our Terms of Service and Privacy Policy</string>
-    <string name="tv2">I did not get SMS with verification code Re-Enter SMS</string>
+    <string name="didnt_get_code_sms">I did not get SMS with verification code Re-Enter SMS</string>
     <string name="tv3">Code is uncorrect. Try it again</string>
     <string name="next">Next</string>
     <string name="save">Save</string>
-    <string name="verify">Verify mobile number</string>
+    <string name="verify_mobile_phone">Verify mobile number</string>
     <string name="lets_go">Lets Go!</string>
     <string name="name">My name</string>
     <string name="email">Email</string>
@@ -30,5 +30,9 @@
     <string name="day">Jun 18, 2020</string>
     <string name="street">75 Park Place 8th floor, New York NY</string>
     <string name="man">Claudia Smith</string>
+    <string name="orders">Orders</string>
+    <string name="calendar">Calendar</string>
+    <string name="notifications">Notifications</string>
+    <string name="prof">Profile</string>
 
 </resources>

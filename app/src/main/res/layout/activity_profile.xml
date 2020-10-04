@@ -26,10 +26,7 @@
         android:text="@string/profile"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:textColor="@color/signIn"/>
-
-
-
+        android:textColor="@color/colorBlackLight80"/>
 
     <Button
         android:id="@+id/profile"
@@ -39,7 +36,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
-        android:background="@drawable/profile_shap"
+        android:background="@drawable/shape_circle"
         android:drawableTop="@drawable/ic_ring"
         android:drawableEnd="@drawable/ic_vector"
         android:paddingTop="50dp"/>
@@ -51,7 +48,7 @@
         android:layout_marginTop="30dp"
         android:text="@string/tap"
         android:textStyle="bold"
-        android:textColor="@color/signIn"
+        android:textColor="@color/colorBlackLight80"
         android:textSize="15dp"/>
 
 
