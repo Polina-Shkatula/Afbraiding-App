@@ -5,7 +5,7 @@
     <string name="code">+421</string>
     <string name="number">Phone Number</string>
     <string name="message">Please enter your mobile number. We will send you a verification message to confirm your account</string>
-    <string name="message2">Please enter the 4 digit verification code that was sent to +421 555 89 39 54.</string>
+    <string name="verify_enter_code_sent_to">Please enter the 4 digit verification code that was sent to +421 555 89 39 54.</string>
     <string name="sign_in">Sign In</string>
     <string name="profile">Add Profile Picture</string>
     <string name="create_account_title">Create Account</string>
@@ -17,7 +17,7 @@
     <string name="save">Save</string>
     <string name="verify_mobile_phone">Verify mobile number</string>
     <string name="lets_go">Lets Go!</string>
-    <string name="name">My name</string>
+    <string name="my_name">My name</string>
     <string name="email">Email</string>
     <string name="tap">Tap here to add photo</string>
     <string name="congratulation">Congratulations!</string>
@@ -34,5 +34,6 @@
     <string name="calendar">Calendar</string>
     <string name="notifications">Notifications</string>
     <string name="prof">Profile</string>
+    <string name="verification">Verification</string>
 
 </resources>
