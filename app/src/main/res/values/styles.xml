@@ -1,6 +1,13 @@
 <resources>
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <style name="MsgErrorText" parent="TextAppearance.AppCompat.Small">
+            <item name="android:textColor">@color/colorAppRed</item>
+            <!--        <item name="android:fontFamily">@font/avenir_next_regular</item>-->
+            <item name="android:textSize">12sp</item>
+            <item name="android:lineSpacingMultiplier">1.0</item>
+            <item name="android:lineSpacingExtra">5dp</item>
+        </style>
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

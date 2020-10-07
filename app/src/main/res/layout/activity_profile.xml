@@ -25,7 +25,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/shape_circle"
-        android:src="@drawable/ic_plus_circle"
+        android:src="@drawable/ic_plus"
         android:layout_gravity="center" />
 
     <TextView

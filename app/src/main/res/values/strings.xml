@@ -25,7 +25,7 @@
     <string name="order">Orders</string>
     <string name="today">Today</string>
     <string name="tomorrow">Tomorrow</string>
-    <string name="week">This week</string>
+    <string name="this_week">This week</string>
     <string name="clock">9:15 AM</string>
     <string name="day">Jun 18, 2020</string>
     <string name="street">75 Park Place 8th floor, New York NY</string>
@@ -34,6 +34,34 @@
     <string name="calendar">Calendar</string>
     <string name="notifications">Notifications</string>
     <string name="prof">Profile</string>
+    <string name="my_profile">My Profile</string>
     <string name="verification">Verification</string>
+
+    <string name="add_photo">Add Photo</string>
+    <string name="dialog_action_ok">OK</string>
+
+    <string name="my_calendar">My Calendar</string>
+
+    <string name="cancel_the_order">Cancel the Order?</string>
+    <string name="cancel_the_order_confirm">Are you sure that you want to cancel this order? Your rate will be downgraded by 1 star</string>
+    <string name="no">No</string>
+    <string name="yes_cancel">Yes, cancel</string>
+
+    <string name="some_words_about_you">Some words about you</string>
+    <string name="price">Price</string>
+    <string name="submit">Submit</string>
+
+    <string name="order_details">Order Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="short_descr">Short Style Description</string>
+    <string name="address">Address</string>
+    <string name="map">Map</string>
+    <string name="accept_order">Make an Order</string>
+    <string name="phone_number">Phone number</string>
+
+    <string name="cancel_order">Cancel order</string>
+    <string name="call_client">Call client</string>
+    <string name="congratulations">Congratulations!\nClaudia Smith, your request is  accepted.  7:00 PM, Today</string>
 
 </resources>

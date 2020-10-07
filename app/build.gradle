@@ -30,6 +30,8 @@ dependencies {
     implementation 'com.chaos.view:pinview:1.4.3'
     implementation 'com.googlecode.libphonenumber:libphonenumber:8.10.14'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
     implementation "androidx.navigation:navigation-ui-ktx:2.2.2"

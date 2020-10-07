@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlackLight80">
+    android:background="@color/colorBlack">
 
     <com.isseiaoki.simplecropview.CropImageView
         android:id="@+id/cropImageView"
@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:padding="@dimen/spacing_5"
-        custom:scv_background_color="@color/colorBlackLight80"
+        custom:scv_background_color="@color/colorBlack"
         custom:scv_frame_color="@color/white"
         custom:scv_frame_stroke_weight="@dimen/stroke"
         custom:scv_guide_color="@color/white"
@@ -38,7 +38,7 @@
             android:layout_centerVertical="true"
             android:padding="@dimen/spacing_16"
             android:tint="@color/white"
-            android:src="@drawable/ic_arrow" />
+            android:src="@drawable/ic_arrow_left" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/buttonDone"

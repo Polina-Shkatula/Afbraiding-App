@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <include layout="@layout/layout_toolbar_back" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_22"
+        android:layout_marginStart="@dimen/spacing_20"
+        android:text="@string/order_details"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/spacing_20"
+        android:layout_marginStart="@dimen/spacing_20"
+        android:src="@drawable/ic_time"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_16"
+        android:text="Claudia Smith"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toTopOf="@id/ivAvatar"
+        app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
+        app:layout_constraintStart_toEndOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvDateP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/date"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/ivAvatar"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:text="June 18, 2020"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvDateP"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvTimeP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/time"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:text="08:45 PM"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvTimeP"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvShortDescrP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/short_descr"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvTime"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvShortDescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:text="I want braids like Kim Kardashian"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvShortDescrP"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvAddressP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/address"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvShortDescr"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:text="253, Fulton st."
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddressP"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:layout_marginEnd="@dimen/spacing_40"
+        android:text="@string/map"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toTopOf="@+id/tvAddress"
+        app:layout_constraintBottom_toBottomOf="@id/tvAddress"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumberP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_16"
+        android:text="@string/phone_number"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddress"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_4"
+        android:text="8 996 555 89 39 54"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/colorBlackLight80"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumberP"
+        app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/shape_stroke_60"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/frame2">
+
+        <TextView
+            android:id="@+id/btnCancelOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_order"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:paddingStart="@dimen/spacing"
+            android:paddingEnd="@dimen/spacing_16"
+            android:paddingTop="@dimen/spacing"
+            android:paddingBottom="@dimen/spacing"
+            android:drawableStart="@drawable/ic_plus_circle"
+            android:textColor="@color/colorBlackLight80"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumberP"
+            app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/shape_stroke_60"
+        app:layout_constraintBottom_toBottomOf="@id/frame1"
+        app:layout_constraintStart_toEndOf="@id/frame1"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:id="@+id/btnCallClient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/call_client"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:drawablePadding="@dimen/spacing"
+            android:paddingStart="@dimen/spacing_16"
+            android:paddingEnd="@dimen/spacing_16"
+            android:paddingTop="@dimen/spacing"
+            android:paddingBottom="@dimen/spacing"
+            android:drawableStart="@drawable/ic_phone"
+            android:textColor="@color/colorBlackLight80"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumberP"
+            app:layout_constraintStart_toStartOf="@id/ivAvatar" />
+    </FrameLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btnAcceptOrder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="34dp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:background="@drawable/selector_btn_60"
+        android:text="@string/accept_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

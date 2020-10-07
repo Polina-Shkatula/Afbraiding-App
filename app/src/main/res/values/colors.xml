@@ -11,5 +11,22 @@
     <color name="BottomNavigation">#FF757575</color>
     <color name="colorTransparent">#00FFFFFF</color>
     <color name="colorBlackLight80">#CC333333</color>
+    <color name="colorAccent">#492067</color>
+    <color name="windowBackground">#FBF5FF</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhite50">#80FFFFFF</color>
+    <color name="colorBlack80">#000000</color>
+    <color name="colorBlackLight">#333333</color>
+    <color name="colorBlackLight2">#757575</color>
+
+    <color name="colorGreyLight">#BDBDBD</color>
+    <color name="colorGreyLight2">#EBEBEB</color>
+    <color name="colorButtonEnabled">#672E92</color>
+    <color name="colorButtonDisabled">#C9C9C9</color>
+
+    <color name="colorAppRed">#DD4927</color>
+    <color name="colorRed">#C03B58</color>
+    <color name="colorYellow">#F8A933</color>
 
 </resources>
