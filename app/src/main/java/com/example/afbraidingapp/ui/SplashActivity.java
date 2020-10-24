@@ -5,20 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import java.util.*;
 
 import com.example.afbraidingapp.R;
 
 public class SplashActivity extends AppCompatActivity {
-    Timer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        timer = new Timer();
-        timer.schedule(new TimerTask() {
+        new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashActivity.this, SignInActivity.class);
@@ -26,5 +23,6 @@ public class SplashActivity extends AppCompatActivity {
                 finish();
             }
         }, 2000);
+
     }
 }

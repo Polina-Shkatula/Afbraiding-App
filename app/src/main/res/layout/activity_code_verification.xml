@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".ui.CodeVerificationActivity"
+    android:fitsSystemWindows="true">
 
     <include layout="@layout/layout_toolbar"/>
 
@@ -13,11 +15,11 @@
         android:id="@+id/tvVerification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/verification"
+        android:text="@string/verification"
         android:textStyle="bold"
         android:textSize="34sp"
-        android:textColor="@color/colorBlackLight80"
-        android:layout_marginTop="32dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="2dp"
         android:layout_marginStart="21dp"
         android:layout_marginEnd="21dp" />
 
@@ -25,7 +27,7 @@
         android:id="@+id/tvSendToPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/verify_enter_code_sent_to"
+        android:text="@string/verify_enter_code_sent_to"
         android:lineSpacingExtra="8dp"
         android:textSize="17sp"
         android:textColor="@color/colorBlackLight80"
@@ -47,23 +49,23 @@
             android:layout_height="wrap_content"
             style="@style/PinWidget.PinView"
             android:layout_gravity="center_horizontal"
-            android:cursorVisible="true"
             android:inputType="number"
-            android:itemBackground="@color/white"
+            android:itemBackground="@drawable/bg_pin_btn"
             android:padding="0dp"
             android:textSize="28sp"
             tools:text="1234"
             android:textColor="@color/colorBlackLight80"
-            app:cursorColor="@color/colorBlackLight80"
             app:cursorWidth="2dp"
-            app:hideLineWhenFilled="false"
+            android:cursorVisible="true"
+            app:cursorColor="@color/colorRed"
+            app:hideLineWhenFilled="true"
             app:itemCount="4"
             app:itemHeight="42dp"
             app:itemSpacing="24dp"
             app:itemWidth="42dp"
             app:lineColor="@color/colorTransparent"
             app:lineWidth="0dp"
-            app:viewType="rectangle" />
+            app:viewType="rectangle"/>
         <TextView
             android:id="@+id/tvIncorrectCode"
             android:visibility="gone"
@@ -99,6 +101,6 @@
         android:layout_marginEnd="34dp"
         android:textAllCaps="false"
         android:textSize="17sp"
-        android:background="@drawable/shape"
+        android:background="@drawable/selector_btn_60"
         android:text="@string/verify_mobile_phone"/>
 </LinearLayout>
