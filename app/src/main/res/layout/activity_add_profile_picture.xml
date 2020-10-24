@@ -1,43 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@color/colorWhite">
 
-    <include layout="@layout/layout_toolbar"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:gravity="center"
-        android:text="@string/profile"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        android:textColor="@color/colorBlackLight80"/>
+    <include layout="@layout/layout_toolbar" />
 
     <ImageView
         android:id="@+id/btnAddPhoto"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="40dp"
-        android:layout_gravity="center"
         android:background="@drawable/shape_circle"
-        android:src="@drawable/ic_plus" />
-
+        android:src="@drawable/ic_plus_circle"
+        android:layout_gravity="center" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:text="@string/tap"
-        android:textStyle="bold"
         android:textColor="@color/colorBlackLight80"
-        android:textSize="15dp"/>
+        android:textStyle="bold"
+        android:textSize="17sp" />
 
     <View
         android:layout_weight="1"
@@ -45,14 +33,18 @@
         android:layout_height="0dp"/>
 
     <Button
+        android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:enabled="false"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
         android:layout_marginStart="34dp"
         android:layout_marginEnd="34dp"
-        android:layout_marginBottom="34dp"
-        android:text="@string/save"
-        android:textColor="@color/ground"
         android:textAllCaps="false"
-        android:textSize="15dp"
-        android:background="@drawable/shape"/>
+        android:textSize="17sp"
+        android:background="@drawable/selector_btn_60"
+        android:text="@string/save"/>
+
 </LinearLayout>
