@@ -30,7 +30,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="56dp"
         android:text="@string/message"
-        android:textSize="20sp"
+        android:textSize="17sp"
         android:textColor="@color/colorBlackLight80"/>
 
 
@@ -70,7 +70,7 @@
                     android:id="@+id/et_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="555 89 39 54"
+                    android:hint="555 8939 5467"
                     android:inputType="phone"
                     android:textColor="?attr/colorPrimaryDark"
                     android:textColorHint="@color/colorGreyLight"

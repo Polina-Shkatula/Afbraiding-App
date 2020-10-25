@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.text.method.DigitsKeyListener;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,6 +31,7 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
         editText = (EditText) findViewById(R.id.et_phone);
+        editText.setKeyListener(DigitsKeyListener.getInstance("0123456789"));
 
         editText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -75,7 +77,7 @@ public class SignInActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 int length = editable.length();
                 button.setEnabled(length == 13);
-                if(length > 13) editText.setError("Invalid number");
+                if (length > 13) editText.setError("Invalid number");
             }
         });
 
