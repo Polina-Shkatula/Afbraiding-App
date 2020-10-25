@@ -44,7 +44,7 @@
         android:layout_marginEnd="34dp"
         android:textAllCaps="false"
         android:textSize="17sp"
-        android:background="@drawable/selector_btn_60"
+        android:background="@drawable/selector_btn_60_2"
         android:text="@string/save"/>
 
 </LinearLayout>
