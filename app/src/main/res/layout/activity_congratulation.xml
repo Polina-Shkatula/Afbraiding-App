@@ -12,9 +12,9 @@
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
         android:text="@string/congratulation"
-        android:textColor="@color/colorBlackLight80"
+        android:textColor="@color/colorBlack"
         android:textStyle="bold"
-        android:textSize="30sp" />
+        android:textSize="34sp" />
 
     <ImageView
         android:id="@+id/btnAddPhoto"
