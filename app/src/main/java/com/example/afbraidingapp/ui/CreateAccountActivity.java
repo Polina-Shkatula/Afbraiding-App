@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,6 +25,7 @@ public class CreateAccountActivity extends AppCompatActivity {
 
         editText1 = (EditText) findViewById(R.id.etName);
         editText2 = (EditText) findViewById(R.id.etEmail);
+
         button = (Button) findViewById(R.id.btnNext);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,9 +51,11 @@ public class CreateAccountActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable editable) {
-                if(editText2 != null){
+                if(Patterns.EMAIL_ADDRESS.matcher(editText2.getText().toString()).matches()){
                     button.setEnabled(true);
                 }
+                else
+                    editText2.setError("Email is INVALID.");
             }
         });
     }
