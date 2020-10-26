@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".ui.CodeVerificationActivity"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context=".ui.CodeVerificationActivity">
 
     <include layout="@layout/layout_toolbar"/>
 
@@ -17,30 +17,30 @@
         android:layout_height="wrap_content"
         android:text="@string/verification"
         android:textStyle="bold"
-        android:textSize="34sp"
+        android:textSize="@dimen/text_34"
         android:textColor="@color/colorBlack"
         android:layout_marginTop="2dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginEnd="21dp" />
+        android:layout_marginStart="@dimen/spacing_22"
+        android:layout_marginEnd="@dimen/spacing_22" />
 
     <TextView
         android:id="@+id/tvSendToPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/verify_enter_code_sent_to"
-        android:lineSpacingExtra="8dp"
-        android:textSize="17sp"
+        android:lineSpacingExtra="@dimen/spacing"
+        android:textSize="@dimen/text_17"
         android:textColor="@color/colorBlackLight80"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginEnd="21dp" />
+        android:layout_marginTop="@dimen/spacing_32"
+        android:layout_marginStart="@dimen/spacing_22"
+        android:layout_marginEnd="@dimen/spacing_22" />
 
 
     <LinearLayout
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/spacing_32"
         android:layout_gravity="center"
         android:orientation="vertical">
         <com.chaos.view.PinView
@@ -52,17 +52,17 @@
             android:inputType="number"
             android:itemBackground="@drawable/bg_pin_btn"
             android:padding="0dp"
-            android:textSize="28sp"
+            android:textSize="@dimen/text_28"
             tools:text="1234"
             android:textColor="@color/colorBlackLight80"
-            app:cursorWidth="2dp"
+            app:cursorWidth="@dimen/spacing_2"
             android:cursorVisible="true"
             app:cursorColor="@color/colorRed"
             app:hideLineWhenFilled="true"
             app:itemCount="4"
-            app:itemHeight="42dp"
-            app:itemSpacing="24dp"
-            app:itemWidth="42dp"
+            app:itemHeight="@dimen/spacing_42"
+            app:itemSpacing="@dimen/spacing_24"
+            app:itemWidth="@dimen/spacing_42"
             app:lineColor="@color/colorTransparent"
             app:lineWidth="0dp"
             app:viewType="rectangle"/>
@@ -72,19 +72,19 @@
             tools:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_marginStart="@dimen/spacing_20"
             android:text="@string/tv3"
-            android:textSize="15sp"
+            android:textSize="@dimen/text_15"
             android:textColor="@color/colorRedReal" />
         <TextView
             android:id="@+id/tvResend"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/spacing_20"
+            android:layout_marginStart="@dimen/spacing_20"
             android:text="@string/didnt_get_code_sms"
-            android:textSize="15sp"
+            android:textSize="@dimen/text_15"
             android:textColor="@color/colorBlackLight80" />
     </LinearLayout>
 
@@ -92,15 +92,15 @@
         android:id="@+id/btnVerify"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="@dimen/spacing_20"
         android:enabled="false"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="34dp"
+        android:layout_marginStart="@dimen/spacing_34"
+        android:layout_marginEnd="@dimen/spacing_34"
         android:textAllCaps="false"
-        android:textSize="17sp"
+        android:textSize="@dimen/text_17"
         android:background="@drawable/selector_btn_60"
         android:text="@string/verify_mobile_phone"/>
 </LinearLayout>

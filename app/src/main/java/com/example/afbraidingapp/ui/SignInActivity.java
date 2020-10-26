@@ -23,13 +23,18 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
+        initUI();
+    }
+
+    private void initUI() {
         button = (Button) findViewById(R.id.next_btn);
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                openNewActivity();
+                openCodeVerification();
             }
         });
+
         editText = (EditText) findViewById(R.id.et_phone);
         editText.setKeyListener(DigitsKeyListener.getInstance("0123456789"));
 
@@ -77,13 +82,12 @@ public class SignInActivity extends AppCompatActivity {
             public void afterTextChanged(Editable editable) {
                 int length = editable.length();
                 button.setEnabled(length == 13);
-                if (length > 13) editText.setError("Invalid number");
+                if (length > 13) editText.setError(getString(R.string.invalid_number));
             }
         });
-
     }
 
-    public void openNewActivity(){
+    public void openCodeVerification(){
         Intent intent = new Intent(this, CodeVerificationActivity.class);
         startActivity(intent);
     }

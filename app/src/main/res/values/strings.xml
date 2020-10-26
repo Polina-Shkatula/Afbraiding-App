@@ -7,6 +7,7 @@
     <string name="message">Please enter your mobile number. We will send you a verification message to confirm your account</string>
     <string name="verify_enter_code_sent_to">Please enter the 4 digit verification code that was sent to +421 555 89 39 54.</string>
     <string name="sign_in">Sign In</string>
+    <string name="phone_number_hint">555 8939 5467</string>
     <string name="profile">Add Profile Picture</string>
     <string name="create_account_title">Create Account</string>
     <string name="back">Back</string>
@@ -50,6 +51,8 @@
     <string name="some_words_about_you">Some words about you</string>
     <string name="price">Price</string>
     <string name="submit">Submit</string>
+    <string name="invalid_number">Invalid number</string>
+    <string name="email_invalid">Email is INVALID.</string>
 
     <string name="order_details">Order Details</string>
     <string name="date">Date</string>

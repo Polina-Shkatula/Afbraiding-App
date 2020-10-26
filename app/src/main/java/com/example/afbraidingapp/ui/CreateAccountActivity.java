@@ -1,6 +1,7 @@
 package com.example.afbraidingapp.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -23,6 +24,10 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
+        initUI();
+    }
+
+    private void initUI() {
         editText1 = (EditText) findViewById(R.id.etName);
         editText2 = (EditText) findViewById(R.id.etEmail);
 
@@ -30,14 +35,14 @@ public class CreateAccountActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if((editText1 != null) && (editText2 != null)){
-                    openNewActivity();
+                if((!editText1.toString().isEmpty()) && (!editText2.toString().isEmpty())){
+                    openAddProfilePicture();
                 }
-                if(editText1 == null){
-                    editText1.setError("Invalid number");
+                if(editText1.toString().isEmpty()){
+                    editText1.setError(getString(R.string.invalid_number));
                 }
-                if(editText2 == null){
-                    editText2.setError("Invalid number");
+                if(editText2.toString().isEmpty()){
+                    editText2.setError(getString(R.string.invalid_number));
                 }
             }
         });
@@ -54,13 +59,14 @@ public class CreateAccountActivity extends AppCompatActivity {
                 if(Patterns.EMAIL_ADDRESS.matcher(editText2.getText().toString()).matches()){
                     button.setEnabled(true);
                 }
-                else
-                    editText2.setError("Email is INVALID.");
+                else{
+                    editText2.setError(getString(R.string.email_invalid));
+                }
             }
         });
     }
 
-    public void openNewActivity(){
+    public void openAddProfilePicture(){
         Intent intent = new Intent(this, AddProfilePictureActivity.class);
         startActivity(intent);
     }

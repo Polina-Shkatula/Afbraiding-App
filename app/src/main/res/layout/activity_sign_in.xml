@@ -14,32 +14,31 @@
     <TextView
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="253dp"
+        android:layout_marginTop="@dimen/spacing_22"
+        android:layout_marginStart="@dimen/spacing_20"
         android:text="@string/sign_in"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="@dimen/text_30"
         android:textColor="@color/colorBlack"/>
 
     <TextView
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="@dimen/spacing_20"
+        android:layout_marginTop="@dimen/spacing_16"
         android:layout_marginEnd="56dp"
         android:text="@string/message"
-        android:textSize="17sp"
+        android:textSize="@dimen/text_17"
         android:textColor="@color/colorBlackLight80"/>
 
 
     <LinearLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center"
-        android:layout_marginTop="32dp"
-        android:layout_weight="1"
+        android:layout_marginTop="@dimen/spacing_32"
         android:orientation="vertical">
 
         <LinearLayout
@@ -54,7 +53,6 @@
                 android:id="@+id/countryCodePicker"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top"
                 android:layout_marginStart="@dimen/spacing"
                 android:layout_marginTop="@dimen/spacing_4" />
 
@@ -70,13 +68,12 @@
                     android:id="@+id/et_phone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="555 8939 5467"
+                    android:hint="@string/phone_number_hint"
                     android:inputType="phone"
                     android:textColor="?attr/colorPrimaryDark"
                     android:textColorHint="@color/colorGreyLight"
                     android:textCursorDrawable="@color/colorBlackLight80"
-                    android:textSize="20sp"
-                    tools:ignore="Autofill,RtlSymmetry" />
+                    android:textSize="@dimen/text_20"/>
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>
@@ -87,11 +84,11 @@
         android:id="@+id/tvTerms"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="18dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="@dimen/spacing_18"
+        android:layout_marginStart="@dimen/spacing_60"
+        android:layout_marginEnd="@dimen/spacing_60"
         android:text="@string/tv"
-        android:textSize="12sp"
+        android:textSize="@dimen/text_12"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="@color/colorBlackLight80"/>
@@ -100,15 +97,15 @@
         android:id="@+id/next_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="@dimen/spacing_20"
         android:enabled="false"
         android:textColor="@color/colorWhite"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="34dp"
+        android:layout_marginStart="@dimen/spacing_34"
+        android:layout_marginEnd="@dimen/spacing_34"
         android:textAllCaps="false"
-        android:textSize="17sp"
+        android:textSize="@dimen/text_17"
         android:background="@drawable/selector_btn_60"
         android:text="@string/next"/>
 

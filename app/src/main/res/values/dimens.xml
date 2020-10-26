@@ -1,7 +1,6 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <dimen name="stroke">1dp</dimen>
-
     <dimen name="spacing_2">2dp</dimen>
     <dimen name="spacing_2_5">2.5dp</dimen>
     <dimen name="spacing_3">3dp</dimen>
@@ -23,9 +22,20 @@
     <dimen name="spacing_28">28dp</dimen>
     <dimen name="spacing_30">30dp</dimen>
     <dimen name="spacing_32">32dp</dimen>
+    <dimen name="spacing_34">34dp</dimen>
     <dimen name="spacing_36">36dp</dimen>
     <dimen name="spacing_38">38dp</dimen>
     <dimen name="spacing_40">40dp</dimen>
+    <dimen name="spacing_42">42dp</dimen>
     <dimen name="spacing_48">48dp</dimen>
     <dimen name="spacing_60">60dp</dimen>
+
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_28">28sp</dimen>
+    <dimen name="text_30">30sp</dimen>
+    <dimen name="text_32">32sp</dimen>
+    <dimen name="text_34">34sp</dimen>
 </resources>

@@ -24,7 +24,10 @@ public class CodeVerificationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_code_verification);
 
+        initUI();
+    }
 
+    private void initUI() {
         pinView = (PinView) findViewById(R.id.codeEdit);
         textView = (TextView) findViewById(R.id.tvIncorrectCode);
         button = (Button) findViewById(R.id.btnVerify);
@@ -33,7 +36,7 @@ public class CodeVerificationActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(pinView.getText() != null && pinView.getText().toString().equals("2501")){
-                    openNewActivity();
+                    openCreateAccount();
                 }
                 else{
                     textView.setVisibility(View.VISIBLE);
@@ -60,7 +63,7 @@ public class CodeVerificationActivity extends AppCompatActivity {
     }
 
 
-    public void openNewActivity(){
+    public void openCreateAccount(){
         Intent intent = new Intent(this, CreateAccountActivity.class);
         startActivity(intent);
     }
